@@ -16,20 +16,20 @@ import java.net.URL;
 
 public class LoginActivity extends AppCompatActivity {
 
-    EditText register_loginid;
-    EditText register_loginpw;
-    Button register_loginbtn;
+    EditText loginid;
+    EditText loginpw;
+    Button loginbtn;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        register_loginid = findViewById(R.id.register_loginid);
-        register_loginpw = findViewById(R.id.register_loginpw);
-        register_loginbtn = findViewById(R.id.register_loginbtn);
+        loginid = findViewById(R.id.register_loginid);
+        loginpw = findViewById(R.id.register_loginpw);
+        loginbtn = findViewById(R.id.register_loginbtn);
 
-        register_loginbtn.setOnClickListener(new View.OnClickListener() {
+        loginbtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 switch (v.getId())
@@ -39,8 +39,8 @@ public class LoginActivity extends AppCompatActivity {
 
                         String str_url = "http://172.30.1.26:8081/최상위메인주소/login";
                         // 서버와 통신할 데이터 값
-                        String j_username = String.valueOf(register_loginid);
-                        String j_password = String.valueOf(register_loginpw);
+                        String j_username = String.valueOf(loginid);
+                        String j_password = String.valueOf(loginpw);
 
                         // 서버와 통신할 최종 데이터 값 "이름 = 값"형식, 여러 개를 보낼 경우 데이터 사이에 &으로 구별
                         String send_data = "j_username=" + j_username + "&j_password=" + j_password;
