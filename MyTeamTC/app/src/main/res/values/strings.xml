@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyTeamTC</string>
+    <string name="server_addr">http://172.30.1.26:8081</string>
+</resources>

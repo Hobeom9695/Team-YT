@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorPrimary"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabMenu"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:textAlignment="center"
+        app:tabSelectedTextColor="#E91E63"
+        app:tabTextColor="#000000">
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabHome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="홈"
+            android:tint="#FFFFFF" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabArt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="아트" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabCtgram"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="크리램" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabGoods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="굿즈" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabWork2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="맛집" />
+
+        <com.google.android.material.tabs.TabItem
+            android:id="@+id/tabWork"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매니저" />
+
+    </com.google.android.material.tabs.TabLayout>
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+</LinearLayout>

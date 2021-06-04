@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".JoinActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" >
+
+                <TableLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:orientation="horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:layout_weight="2"
+                                android:text="아이디"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinId"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_weight="1"
+                                android:hint="6자리 이상 15자리 이하"
+                                android:inputType="text"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <Button
+                            android:id="@+id/btnIdCheck"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="0"
+                            android:text="중복확인" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="비밀번호"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinPw"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="8자리 이상"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="비밀번호확인"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinPwCheck"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="위 비밀번호와 같아야합니다"
+                                android:inputType="textPassword"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="이름"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinName"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="필수입력"
+                                android:inputType="text"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="휴대폰"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinPhNum"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint='" - " 빼고 입력'
+                                android:inputType="number|phone"
+                                android:maxLength="11"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="닉네임"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinNick"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="3자리 이상 15글자 이하"
+                                android:inputType="text"
+                                android:maxLength="15"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="이메일"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinEmAddress"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="ex) example123@gmail.com"
+                                android:inputType="textEmailAddress"
+                                android:maxLength="20"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/textView"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:text="소속회사"
+                                android:textAlignment="center"
+                                android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+                                android:textSize="18sp" />
+
+                            <EditText
+                                android:id="@+id/register_joinComp"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="8"
+                                android:hint="선택입력"
+                                android:maxLines="1"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:gravity="center_horizontal">
+
+                        <Button
+                            android:id="@+id/register_cancle"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="20dp"
+                            android:text="취소" />
+
+                        <Button
+                            android:id="@+id/register_joinbtn"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:onClick="onBtnPost"
+                            android:text="회원가입" />
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
